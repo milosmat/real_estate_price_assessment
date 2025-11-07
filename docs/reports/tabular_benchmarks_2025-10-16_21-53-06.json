@@ -1,0 +1,174 @@
+[
+  {
+    "model": "xgb",
+    "data_csv": "filtered_property_data.csv",
+    "features": [
+      "kvadratura",
+      "grad",
+      "opstina",
+      "kvart",
+      "broj_soba",
+      "spratnost",
+      "grejanje",
+      "lift",
+      "podrum"
+    ],
+    "cat_cols": [
+      "grad",
+      "opstina",
+      "kvart",
+      "broj_soba",
+      "spratnost",
+      "stanje",
+      "grejanje",
+      "lift",
+      "podrum",
+      "terasa"
+    ],
+    "kfolds": 5,
+    "seed": 42,
+    "metrics": {
+      "model": "xgb",
+      "params": {
+        "n_estimators": 900,
+        "max_depth": 6,
+        "learning_rate": 0.06277757580320362,
+        "subsample": 0.9938937151834346,
+        "colsample_bytree": 0.9484241429862473,
+        "reg_lambda": 1.0,
+        "reg_alpha": 0.0,
+        "gamma": 0.49722873130541034,
+        "tree_method": "hist",
+        "n_jobs": -1
+      },
+      "n": 1676,
+      "mae": 25935.377191438878,
+      "rmse": 41798.00423050515,
+      "mape": 17.13942200154937,
+      "mae_cv_mean": 25936.214407857475,
+      "mae_cv_std": 1699.6369000005477
+    },
+    "params": {
+      "n_estimators": 900,
+      "max_depth": 6,
+      "learning_rate": 0.06277757580320362,
+      "subsample": 0.9938937151834346,
+      "colsample_bytree": 0.9484241429862473,
+      "reg_lambda": 1.0,
+      "reg_alpha": 0.0,
+      "gamma": 0.49722873130541034,
+      "tree_method": "hist",
+      "n_jobs": -1
+    },
+    "predictions_csv": "docs\\reports\\xgb_predictions_eval.csv",
+    "timestamp": "2025-10-16_21-53-06"
+  },
+  {
+    "model": "rf",
+    "data_csv": "filtered_property_data.csv",
+    "features": [
+      "kvadratura",
+      "grad",
+      "opstina",
+      "kvart",
+      "broj_soba",
+      "spratnost",
+      "grejanje",
+      "lift",
+      "podrum"
+    ],
+    "cat_cols": [
+      "grad",
+      "opstina",
+      "kvart",
+      "broj_soba",
+      "spratnost",
+      "stanje",
+      "grejanje",
+      "lift",
+      "podrum",
+      "terasa"
+    ],
+    "kfolds": 5,
+    "seed": 42,
+    "metrics": {
+      "model": "rf",
+      "params": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "bootstrap": true,
+        "n_jobs": -1
+      },
+      "n": 1676,
+      "mae": 28450.942897850608,
+      "rmse": 44571.099080337575,
+      "mape": 18.837717624051084,
+      "mae_cv_mean": 28450.090450294578,
+      "mae_cv_std": 2132.632897364503
+    },
+    "params": {
+      "n_estimators": 500,
+      "max_depth": null,
+      "min_samples_split": 2,
+      "min_samples_leaf": 1,
+      "bootstrap": true,
+      "n_jobs": -1
+    },
+    "predictions_csv": "docs\\reports\\rf_predictions_eval.csv",
+    "timestamp": "2025-10-16_21-53-06"
+  },
+  {
+    "model": "gbrt",
+    "data_csv": "filtered_property_data.csv",
+    "features": [
+      "kvadratura",
+      "grad",
+      "opstina",
+      "kvart",
+      "broj_soba",
+      "spratnost",
+      "grejanje",
+      "lift",
+      "podrum"
+    ],
+    "cat_cols": [
+      "grad",
+      "opstina",
+      "kvart",
+      "broj_soba",
+      "spratnost",
+      "stanje",
+      "grejanje",
+      "lift",
+      "podrum",
+      "terasa"
+    ],
+    "kfolds": 5,
+    "seed": 42,
+    "metrics": {
+      "model": "gbrt",
+      "params": {
+        "n_estimators": 500,
+        "learning_rate": 0.05,
+        "max_depth": 3,
+        "subsample": 0.8
+      },
+      "n": 1676,
+      "mae": 26584.282795789706,
+      "rmse": 41404.78385946911,
+      "mape": 17.73174822606296,
+      "mae_cv_mean": 26583.51537359007,
+      "mae_cv_std": 1681.0380940557436
+    },
+    "params": {
+      "n_estimators": 500,
+      "learning_rate": 0.05,
+      "max_depth": 3,
+      "subsample": 0.8
+    },
+    "predictions_csv": "docs\\reports\\gbrt_predictions_eval.csv",
+    "timestamp": "2025-10-16_21-53-06"
+  }
+]

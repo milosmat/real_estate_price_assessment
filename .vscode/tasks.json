@@ -1,0 +1,61 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run XGB predictions",
+			"type": "shell",
+			"command": "D:/faks/diplomski/real_estate_price_assessment-main/.venv/Scripts/python.exe",
+			"args": [
+				"XGboost_predikcija_karakteristike.py"
+			],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Image model predict (residual)",
+			"type": "shell",
+			"command": "D:/faks/diplomski/real_estate_price_assessment-main/.venv/Scripts/python.exe",
+			"args": [
+				"image_price_model.py",
+				"predict",
+				"--image_root",
+				"property_images",
+				"--checkpoint",
+				"checkpoint_image_price.pth",
+				"--target_mode",
+				"residual",
+				"--xgb_csv",
+				"xgb_predictions.csv",
+				"--out_csv",
+				"image_price_predictions.csv"
+			],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Fusion with uncertainty",
+			"type": "shell",
+			"command": "D:/faks/diplomski/real_estate_price_assessment-main/.venv/Scripts/python.exe",
+			"args": [
+				"stack_fusion.py",
+				"--xgb_csv",
+				"xgb_predictions.csv",
+				"--img_csv",
+				"image_price_predictions.csv",
+				"--out_csv",
+				"fused_predictions.csv",
+				"--report_json",
+				"fusion_report.json",
+				"--use_uncertainty"
+			],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		}
+	]
+}

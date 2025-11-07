@@ -1,0 +1,4 @@
+model,n,mae,rmse,mape,kfolds,seed,data_csv,predictions_csv
+xgb,1676,25935.377191438878,41798.00423050515,17.13942200154937,5,42,filtered_property_data.csv,docs\reports\xgb_predictions_eval.csv
+rf,1676,28450.942897850608,44571.099080337575,18.837717624051084,5,42,filtered_property_data.csv,docs\reports\rf_predictions_eval.csv
+gbrt,1676,26584.282795789706,41404.78385946911,17.73174822606296,5,42,filtered_property_data.csv,docs\reports\gbrt_predictions_eval.csv

@@ -1,0 +1,190 @@
+{
+  "csv": {
+    "csv_path": "filtered_property_data.csv",
+    "n_rows": 1676,
+    "columns": [
+      "id",
+      "grad",
+      "opstina",
+      "kvart",
+      "kvadratura",
+      "broj_soba",
+      "spratnost",
+      "stanje",
+      "grejanje",
+      "cena",
+      "lift",
+      "podrum",
+      "terasa"
+    ],
+    "n_unique_id": 1676,
+    "target_stats": {
+      "count": 1676,
+      "min": 27000.0,
+      "p10": 63500.0,
+      "p25": 85000.0,
+      "median": 123010.0,
+      "p75": 190000.0,
+      "p90": 300100.0,
+      "max": 738888.0,
+      "mean": 155900.0477326969,
+      "std": 106637.2789547689
+    },
+    "missing_counts": {
+      "id": 0,
+      "grad": 0,
+      "opstina": 0,
+      "kvart": 38,
+      "kvadratura": 0,
+      "broj_soba": 0,
+      "spratnost": 0,
+      "stanje": 1476,
+      "grejanje": 259,
+      "cena": 0,
+      "lift": 1192,
+      "podrum": 1676,
+      "terasa": 605
+    },
+    "top_categories": {
+      "grad": {
+        "Beograd": 708,
+        "Novi Sad": 470,
+        "Niš": 178,
+        "Subotica": 83,
+        "Kragujevac": 45,
+        "Zlatibor": 43,
+        "Zrenjanin": 20,
+        "Kruševac": 14,
+        "Pančevo": 14,
+        "Kopaonik": 12
+      },
+      "opstina": {
+        "Gradske lokacije": 925,
+        "Zvezdara opština": 121,
+        "Novi Beograd": 99,
+        "Voždovac opština": 97,
+        "Vračar": 81,
+        "Zemun opština": 65,
+        "Palilula opština": 60,
+        "Savski Venac": 53,
+        "Okolne lokacije": 43,
+        "Stari Grad opština": 40
+      },
+      "kvart": {
+        "Medijana": 107,
+        "Centar": 90,
+        "Mirijevo": 61,
+        "Stari Grad": 56,
+        "Detelinara": 55,
+        "Pantelej": 48,
+        "Zemun": 47,
+        "Telep": 43,
+        "Novo Naselje": 40,
+        "nan": 38
+      },
+      "broj_soba": {
+        "3 sobe": 396,
+        "2 sobe": 380,
+        "1.5 soba": 220,
+        "4 sobe": 188,
+        "2.5 soba": 181,
+        "1 soba": 100,
+        "3.5 soba": 98,
+        "Garsonjera": 59,
+        "5 soba": 31,
+        "4.5 soba": 12
+      },
+      "spratnost": {
+        "3/4 sprata": 75,
+        "2/3 sprata": 74,
+        "5/5 spratova": 73,
+        "3/3 sprata": 68,
+        "1/3 sprata": 65,
+        "4/5 spratova": 62,
+        "2/2 sprata": 61,
+        "1/4 sprata": 56,
+        "3/5 spratova": 55,
+        "2/4 sprata": 54
+      },
+      "stanje": {
+        "nan": 1476,
+        "Renovirano": 200
+      },
+      "grejanje": {
+        "Centralno grejanje": 783,
+        "Etažno grejanje": 270,
+        "nan": 259,
+        "Grejanje na gas": 191,
+        "Grejanje na struju": 138,
+        "Podno grejanje": 35
+      },
+      "lift": {
+        "nan": 1192,
+        "Da": 455,
+        "Ne": 29
+      },
+      "podrum": {
+        "nan": 1676
+      },
+      "terasa": {
+        "Da": 1071,
+        "nan": 605
+      }
+    }
+  },
+  "images": {
+    "n_images": 9303,
+    "n_ids_with_images": 1453,
+    "images_per_id": {
+      "count": 1453,
+      "min": 1.0,
+      "p25": 3.0,
+      "median": 6.0,
+      "p75": 9.0,
+      "max": 34.0,
+      "mean": 6.402615278733655,
+      "std": 3.965740247012247
+    },
+    "resolution_sample_size": 400,
+    "width_stats": {
+      "count": 400,
+      "min": 314.0,
+      "p25": 750.0,
+      "median": 810.0,
+      "p75": 1200.0,
+      "max": 1920.0,
+      "mean": 959.5875,
+      "std": 313.21249551023664
+    },
+    "height_stats": {
+      "count": 400,
+      "min": 347.0,
+      "p25": 750.0,
+      "median": 900.0,
+      "p75": 1080.0,
+      "max": 1080.0,
+      "mean": 895.225,
+      "std": 194.43782907397417
+    }
+  },
+  "overlap": {
+    "ids_in_csv": 1676,
+    "ids_with_images": 1453,
+    "ids_intersection": 1453,
+    "coverage_csv_has_images_pct": 86.6945107398568,
+    "coverage_images_in_csv_pct": 100.0,
+    "example_ids_only_csv": [
+      "5f6eee4c359f512cc31900e5",
+      "62e4240cfad3f57b8c00787a",
+      "630a361e88218e5cdb0b41c2",
+      "630a361e88218e5cdb0b41ce",
+      "63669a41e9a6dcd457064b15",
+      "63792b6ecdbbc003df0d2664",
+      "63c92ef48216b21a1c0a8b55",
+      "63f754db94b348623107899e",
+      "64481a224e04361eb00415f4",
+      "644a69223f3d7a74460e543a"
+    ],
+    "example_ids_only_images": []
+  }
+}
